@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust the height as needed */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  .main-link:hover {
+    color: #98bbd3; /* Change the color on hover as desired */
+  }
+
+  .main-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .main-link.active{
+    color: aqua;
+  }

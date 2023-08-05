@@ -1,6 +1,32 @@
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import AboutUs from "./pages/aboutUs";
+import Home from "./pages/Home";
+import ContactUs from "./pages/contactUs";
+import React  from 'react';
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/aboutus",
+    element: <AboutUs />,
+  },
+  {
+    path: "/contactus",
+    element: <ContactUs />,
+  },
+]);
+
 function App() {
   return (
-   <div><h2>K</h2><h1>1</h1><h2>M</h2></div>
+    <RouterProvider router={router} />
   );
 }
 
